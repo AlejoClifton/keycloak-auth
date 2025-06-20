@@ -1,8 +1,8 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { KeycloakConfig } from '@/interfaces/keycloak-config.interface';
-import { KeycloakAuthService } from '@/keycloak-auth.service';
-import { KeycloakAuthGuard } from '@/guards/keycloak-auth.guard';
+import { KeycloakConfig } from './interfaces/keycloak-config.interface';
+import { KeycloakAuthService } from './keycloak-auth.service';
+import { KeycloakAuthGuard } from './guards/keycloak-auth.guard';
 
 @Module({})
 export class KeycloakAuthModule {

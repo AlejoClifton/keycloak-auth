@@ -1,5 +1,5 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
-import { DecodedToken } from '@/interfaces/keycloak-config.interface';
+import { DecodedToken } from '../interfaces/keycloak-config.interface';
 
 export const CurrentUser = createParamDecorator(
   (data: keyof DecodedToken | undefined, ctx: ExecutionContext): DecodedToken | any => {
