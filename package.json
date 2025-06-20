@@ -9,7 +9,10 @@
     "dev": "tsc --watch",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts"
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
