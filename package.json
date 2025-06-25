@@ -11,7 +11,10 @@
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
     "prepare": "npm run build",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "release:patch": "npm version patch && npm run build && npm publish --access public",
+    "release:minor": "npm version minor && npm run build && npm publish --access public",
+    "release:major": "npm version major && npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
