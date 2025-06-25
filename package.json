@@ -1,6 +1,6 @@
 {
   "name": "@monderks/nestjs-keycloak-auth",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Librería para validación de tokens Keycloak en NestJS (frontend controla login)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
