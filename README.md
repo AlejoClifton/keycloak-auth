@@ -15,7 +15,7 @@ Librería para validación de tokens Keycloak en NestJS cuando el frontend contr
 ## Instalación
 
 ```bash
-npm install @monderks/keycloak-auth
+npm install @monderks/nestjs-keycloak-auth
 ```
 
 ## Configuración
@@ -24,7 +24,7 @@ npm install @monderks/keycloak-auth
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { KeycloakAuthModule } from '@monderks/keycloak-auth';
+import { KeycloakAuthModule } from '@monderks/nestjs-keycloak-auth';
 
 @Module({
   imports: [
@@ -49,7 +49,7 @@ export class AppModule {}
 ```typescript
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { KeycloakAuthModule } from '@monderks/keycloak-auth';
+import { KeycloakAuthModule } from '@monderks/nestjs-keycloak-auth';
 
 @Module({
   imports: [
@@ -78,8 +78,8 @@ Esta librería **no expone controladores**. Solo provee servicios, guards y deco
 
 ```typescript
 import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
-import { KeycloakAuthService, KeycloakAuthGuard, KeycloakAuth, CurrentUser } from '@monderks/keycloak-auth';
-import { DecodedToken } from '@monderks/keycloak-auth';
+import { KeycloakAuthService, KeycloakAuthGuard, KeycloakAuth, CurrentUser } from '@monderks/nestjs-keycloak-auth';
+import { DecodedToken } from '@monderks/nestjs-keycloak-auth';
 
 @Controller('api/auth')
 export class AuthController {
